@@ -54,17 +54,20 @@ import UIKit
         
         let halfHeadWidth = self.headWidth / 2.0
         
+        
         if self.startPoint.y == self.endPoint.y
         {
-            CGContextAddLineToPoint(context, endPoint.x - self.headWidth , self.endPoint.y + halfHeadWidth)
-            CGContextMoveToPoint(context, endPoint.x, endPoint.y)
-            CGContextAddLineToPoint(context, endPoint.x - self.headWidth , self.endPoint.y - halfHeadWidth)
+            let convertHeight = self.startPoint.x > self.endPoint.x ? self.headLenght : -self.headLenght
+            CGContextAddLineToPoint(context, self.endPoint.x + convertHeight , self.endPoint.y + halfHeadWidth)
+            CGContextMoveToPoint(context, self.endPoint.x, endPoint.y)
+            CGContextAddLineToPoint(context, self.endPoint.x + convertHeight , self.endPoint.y - halfHeadWidth)
         }
         else
         {
-            CGContextAddLineToPoint(context, endPoint.x - halfHeadWidth , self.endPoint.y - halfHeadWidth)
-            CGContextMoveToPoint(context, endPoint.x, endPoint.y)
-            CGContextAddLineToPoint(context, endPoint.x + halfHeadWidth , self.endPoint.y - halfHeadWidth)
+            let convertHeight = self.startPoint.y > self.endPoint.y ? self.headLenght : -self.headLenght
+            CGContextAddLineToPoint(context, self.endPoint.x - halfHeadWidth , self.endPoint.y + convertHeight)
+            CGContextMoveToPoint(context, self.endPoint.x, endPoint.y)
+            CGContextAddLineToPoint(context, self.endPoint.x + halfHeadWidth , self.endPoint.y + convertHeight)
         }
         
         CGContextStrokePath(context)
