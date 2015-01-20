@@ -13,6 +13,7 @@
 		F314ED111A6ED994002AD04C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F314ED101A6ED994002AD04C /* Images.xcassets */; };
 		F314ED141A6ED994002AD04C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F314ED121A6ED994002AD04C /* LaunchScreen.xib */; };
 		F314ED201A6ED994002AD04C /* IBDesignebleArrowViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314ED1F1A6ED994002AD04C /* IBDesignebleArrowViewTests.swift */; };
+		F314ED2A1A6ED9BF002AD04C /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314ED291A6ED9BF002AD04C /* ArrowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F314ED191A6ED994002AD04C /* IBDesignebleArrowViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBDesignebleArrowViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F314ED1E1A6ED994002AD04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F314ED1F1A6ED994002AD04C /* IBDesignebleArrowViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignebleArrowViewTests.swift; sourceTree = "<group>"; };
+		F314ED291A6ED9BF002AD04C /* ArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F314ED101A6ED994002AD04C /* Images.xcassets */,
 				F314ED121A6ED994002AD04C /* LaunchScreen.xib */,
 				F314ED071A6ED994002AD04C /* Supporting Files */,
+				F314ED291A6ED9BF002AD04C /* ArrowView.swift */,
 			);
 			path = IBDesignebleArrowView;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				F314ED0C1A6ED994002AD04C /* ViewController.swift in Sources */,
 				F314ED0A1A6ED994002AD04C /* AppDelegate.swift in Sources */,
+				F314ED2A1A6ED9BF002AD04C /* ArrowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
